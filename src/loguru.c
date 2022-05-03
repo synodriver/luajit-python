@@ -19,7 +19,10 @@ DLLEXPORT void loguru_init()
         PyErr_Print();
         fprintf(stderr, "Error: could not import module\n");
     }
-    Py_DECREF(pmodule);
+    else
+    {
+        Py_DECREF(pmodule);
+    }
 }
 
 DLLEXPORT void loguru_free()
