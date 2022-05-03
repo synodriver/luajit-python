@@ -17,7 +17,7 @@ DLLEXPORT void loguru_init()
     if (!pmodule)
     {
         PyErr_Print();
-        fprintf(stderr, "Error: could not import module 'embedded'\n");
+        fprintf(stderr, "Error: could not import module\n");
     }
     Py_DECREF(pmodule);
 }
